@@ -8,9 +8,9 @@ print()
 print(df.info())  # Get information on all the columns ('object' means text/string)
 print()
 
-print(df.head(20))  # Display first 5 rows of the dataframe (`df.describe(__n__)` displays n rows)
+print(df.head(5))  # Display first 5 rows of the dataframe (`df.describe(__n__)` displays n rows)
 
-df['total_sales'] = df['Units Sold'] + df['Unit Price']
+df['total_sales'] = df['Units Sold'] * df['Unit Price']
 print(df)
 
 print(df.info())

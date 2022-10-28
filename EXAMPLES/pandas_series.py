@@ -11,6 +11,10 @@ s2 = pd.Series(np.linspace(1, 5, NUM_VALUES))  # create series with auto-generat
 print("s1:", s1, "\n")
 print("s2:", s2, "\n")
 
+print(f"s1['a']: {s1['a']}")
+print(f"s2[2]: {s2[2]}")
+
+
 print("selecting elements")
 print(s1[['h', 'b']], "\n")  # select items from series
 
@@ -49,3 +53,4 @@ print(s4.max(), s4.min(), s4.max() - s4.min(), '\n')  # print stats
 s = pd.Series([5, 10, 15], ['a', 'b', 'c'])  # create new series with index
 print("creating series with index")
 print(s)
+

@@ -2,7 +2,7 @@ import pandas as pd
 from printheader import print_header
 
 
-cols = ['alpha', 'beta', 'gamma', 'delta', 'epsilon']  # column names
+cols = ['alpha', 'beta', 'gamma', 'delta', 'epsilon']  # column names  AKA variables AKA observations
 indices = ['a', 'b', 'c', 'd', 'e', 'f']  # row names
 
 values = [  # sample data
@@ -28,3 +28,5 @@ print(df, '\n')
 
 print_header("df['gamma']")
 print(df['gamma'])  # select column 'gamma'
+
+print(df.head())

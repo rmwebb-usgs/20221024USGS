@@ -21,6 +21,7 @@ dates = pd.date_range('4/1/2013 00:00:00', periods=NUM_DATA_POINTS, freq='T')  #
 data = np.random.random(NUM_DATA_POINTS)  # a day's worth of data
 
 series = pd.Series(data, index=dates)  # series indexed by minutes
+print(series)
 
 time_slice = series['4/1/2013 10:00:00':'4/1/2013 10:30:00']  # select the half hour of data from 10:00 to 10:30
 print(time_slice)  # 31 values

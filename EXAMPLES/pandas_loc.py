@@ -39,8 +39,8 @@ print(df.loc[:, 'beta':'delta'], "\n")
 print_header("df.loc['b':'d', 'beta':'delta']")  # ranges of rows and columns
 print(df.loc['b':'d', 'beta':'delta'], '\n')
 
-print_header("df.loc[['b', 'e', 'a']]")  # iterable of rows
-print(df.loc[['b', 'e', 'a']], "\n")
+print_header("df.loc[['b', 'e', 'a'], ['delta', 'gamma']")  # iterable of rows
+print(df.loc[['b', 'e', 'a'], ['delta', 'gamma']], "\n")
 
 print_header("df.loc[:, ['gamma', 'alpha', 'epsilon']]")  # iterable of columns
 print(df.loc[:, ['gamma', 'alpha', 'epsilon']], "\n")
